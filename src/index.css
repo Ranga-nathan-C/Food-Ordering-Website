@@ -118,7 +118,7 @@
   justify-items: flex-end;
   /* margin-left: 630px; */
   border-radius: 0px, 0px, 0px, 198.9px;
-
+  /* z-index: 0; */
 }
 .container2{
   width: 100%;
@@ -137,7 +137,7 @@
 .imgg{
   margin-top: 30px;
   margin-bottom: 30px;
-  width: 107px;
+  width: 140px;
   height: 83px;
 
 }
@@ -153,12 +153,14 @@
   padding: 14px, 34px, 14px, 34px;
   border-radius: 34px;
   gap: 7px;
-  border-color: #424961;
-  background-color: transparent ;
+  color: #ffffff;
+  border-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0);
+
 }
 .width{
   width: 100%;
-  z-index: 100;
+  /* z-index: 100; */
   display: flex;
   justify-content: flex-end;
   position: absolute;
@@ -211,6 +213,7 @@
   padding: 14px, 34px, 14px, 34px;
   border-radius: 34px;
   gap: 7px; 
+  z-index: 10;
 }
 .cursor{
   display: flex;
@@ -289,22 +292,39 @@
   height: auto;
 }
 
-@media (max-width: 768px) {
-  .foot-img {
-      max-width: 200px;
-      height: auto;
-  }
-  .mar1{
-    max-width: 100%;
-      height: auto;
-  }
-  .mar2{
-    max-width: 100%;
-      height: auto;
-  }
-  .mar3{
-    max-width: 100%;
-      height: auto;
-  }
+
+#home{
+  width: 100%;
+  min-height: 100vh;
 }
+
+.right-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.back1{
+  z-index: 1;
+  position: absolute;
+  right: 0px;
+  max-height: 100vh;
+  max-width: 100%;
+}
+
+.width1{
+  z-index: 2;
+  position: absolute;
+  right: 50px;
+  position: absolute;
+  right: 0px;
+}
+
+.piza1{
+max-height: 100vh;
+max-width: 100%;
+/* position: absolute;
+left: 0px; */
+}
+
 

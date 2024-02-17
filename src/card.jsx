@@ -13,11 +13,11 @@ export default function Card() {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const handlePrev = () => {
-        setCurrentIndex(currentIndex === 0 ? 1 : 0);
+        setCurrentIndex(currentIndex === 1 ? 0 : 0);
     };
 
     const handleNext = () => {
-        setCurrentIndex(currentIndex === 1 ? 0 : 1);
+        setCurrentIndex(currentIndex === 0 ? 1 : 1);
     };
 
     return (
